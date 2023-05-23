@@ -1,0 +1,70 @@
+    <!doctype html>
+    <html lang="en" class="h-100">
+
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="">
+            <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+            <meta name="generator" content="Hugo 0.84.0">
+            <title>Sign up page</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+            <link rel="stylesheet" href="css/carousal.css">
+            <link rel="stylesheet" href="css/carousel.rtl.css">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+          <!-- Custom styles for this template -->
+          <link href="style.css" rel="stylesheet">
+        </head>
+        <body class="d-flex h-100 text-center text-white bg-dark">
+         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+                
+                <div>
+                    <h3 class="float-md-start mb-0"></h3>
+                    <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="knowmore.html">know more</a>
+                    <a class="nav-link" href="landing.html">landing page</a>
+                    <a class="nav-link" href="signin.html">Sign in page</a>
+                    <a class="nav-link active" href="#">Sign up page</a>
+                    <a class="nav-link" href="password.html">pasword</a>
+                    </nav>
+                </div>
+            </header>
+        <body>
+                <style>
+                    span{
+                color:red;
+    }
+                </style>
+                <h1>Sign Up Form</h1>
+                <div class="col">
+                    <form action="success.html">
+                    <p>
+                    <label for="username">Username<input id="username" type="text" onkeyup="validateName()"></label>
+                    <span id="username-error"></span>
+                    </p>
+                    <p>
+                    <label for="email">Email<input id="email" type="text" onkeyup="validateEmail()"></label>
+                    <span id="email-error"></span>
+                    </p>
+                    <p>
+                    <label for="password">Password<input id="password" type="text" onkeyup="validatePassword()"></label>
+                    <span id="password-error"></span>
+                    </p>
+                    <p>
+                    <label for="repeat">Repeat password<input id="repeat" type="text" onkeyup="validateRepeat()"></label>
+                    <span id="repeat-error"></span>
+                    </p>
+                    <button id="submit" type="submit" onclick="return validateForm()">Submit</button>
+                    <span id="submit-error"></span>
+                    </form>
+                </div>
+        
+            <script src="script.js"></script>
+
+        </body>
+    </html>
